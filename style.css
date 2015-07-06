@@ -1,0 +1,57 @@
+p {
+	color: black;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	margin-top: 0px;
+	font-weight: 200;
+
+}
+.important {
+	font-weight: bold;
+}
+#masthead h1 {
+	color: #FF49EB;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: 100;
+	font-size: 600%;
+	text-transform: uppercase;
+	margin: 0px;
+	line-height: 80%;
+}
+#masthead {
+	background-color: rgba(255, 255, 255, .7);
+	padding: 5px;
+	text-align: center;
+	margin: 0px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+body {
+	padding-top: 132px;
+	background: url("pictures/chevron_bg.jpg") repeat center center;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+#masthead .pronounce {
+	font-size: 60%;
+	color: rgba(0,0,0, .9);
+	margin-bottom: 2px;
+}
+
+a {
+	color: #FF49EB;
+	font-weight: 600;
+}
+
+section img {
+	width: 20%;
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	background-color: rgba(255, 255, 255, .7);
+	padding: 20px;
+}
