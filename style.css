@@ -4,6 +4,8 @@ p {
 	font-size: 100%;
 	margin-top: 0px;
 	font-weight: 200;
+	text-align: center;
+
 }
 .important {
 	font-weight: bold;
@@ -19,7 +21,7 @@ p {
 	text-transform: uppercase;
 	margin: 0px;
 	line-height: 80%;
-	text-shadow: 2px 2px 3px #aaa;
+	text-shadow: 3px 3px 3px #aaa;
 	margin-top: 16px;
 	/*margin-top: 30px;*/
 }
@@ -69,16 +71,23 @@ section img {
 	transition: all .75s;
 }
 #pretty:hover img {
-	filter: blur(3px) grayscale(100%);
+	filter: blur(4px) grayscale(100%);
 	-webkit-filter: blur(3px) grayscale(100%);
 	-moz-filter: grayscale(100%);
 }
 #pretty img:hover {
 	-webkit-filter: none;
 	filter: none;
+
 }
 
 .content {
 	background-color: rgba(255, 255, 255, .7);
 	padding: 20px;
+	width: 100%;
+
+}
+.textcontent {
+	margin-left: 27%;
+	margin-right: 27%;
 }
