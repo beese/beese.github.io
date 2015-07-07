@@ -1,30 +1,32 @@
 var clickPic1 = function() {
-	var a = document.getElementById("about");
-	a.innerHTML = "Hey there! I'm Kristin and welcome to my website!";
+	var a = document.getElementById("about").innerHTML;
+	document.getElementById("display").innerHTML = a;
 };
 
 var clickPic2 = function() {
-	var a = document.getElementById("code");
-	a.innerHTML = "hello";
+	var a = document.getElementById("code").innerHTML;
+	document.getElementById("display").innerHTML = a;
 };
 
 var clickPic3 = function() {
-	alert("about!");
-	var a = document.getElementById("resume");
-	a.innerHTML = "hello";
+	var a = document.getElementById("resume").innerHTML;
+	document.getElementById("display").innerHTML = a;
 };
 
 var clickPic4 = function() {
-	alert("about!");
-	var a = document.getElementById("music");
-	a.innerHTML = "hello";
+	var a = document.getElementById("music").innerHTML;
+	document.getElementById("display").innerHTML = a;
 };
 
 var clickPic5 = function() {
-	alert("about!");
-	var a = document.getElementById("contact");
-	a.innerHTML = "hello";
+	var a = document.getElementById("contact").innerHTML;
+	document.getElementById("display").innerHTML = a;
 };
+
+
+// $( "p" ).click(function() {
+//   $( this ).slideUp();
+// });
 
 // <p>Hey there! I'm <a href = "2015-07-07.pdf">Kristin</a>, and welcome to my website!  </p>
 //

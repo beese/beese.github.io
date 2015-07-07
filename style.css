@@ -92,3 +92,19 @@ section img {
 	margin-left: 27%;
 	margin-right: 27%;
 }
+
+#about {
+	display: none;
+}
+#code {
+	display: none;
+}
+#resume {
+	display: none;
+}
+#music {
+	display: none;
+}
+#contact {
+	display: none;
+}
