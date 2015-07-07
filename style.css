@@ -1,23 +1,27 @@
 p {
 	color: black;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Roboto", "Helvetica", Arial, sans-serif;
 	font-size: 100%;
 	margin-top: 0px;
 	font-weight: 200;
-
 }
 .important {
 	font-weight: bold;
 }
 #masthead h1 {
-	color: #FF49EB;
+	color: #FF799C;
 	/*possibly change color to match the logo square*/
-	font-family: "Helvetica Neue", sans-serif;
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	/*font-family: Helvetica, Arial, sans-serif;*/
+	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
 	font-weight: 100;
-	font-size: 600%;
+	font-size: 700%;
 	text-transform: uppercase;
 	margin: 0px;
 	line-height: 80%;
+	text-shadow: 2px 2px 3px #aaa;
+	margin-top: 16px;
+	/*margin-top: 30px;*/
 }
 #masthead {
 	background-color: rgba(255, 255, 255, .7);
@@ -41,9 +45,14 @@ body {
 	margin-bottom: 2px;
 }
 
+#topmenu {
+	/*how can I make everything evenly spaced*/
+	width: 20%;
+}
+
 a {
-	color: #FF49EB;
-	font-weight: 600;
+	color: #FF799C;
+	font-weight: 500;
 }
 
 section img {
