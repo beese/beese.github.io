@@ -64,7 +64,18 @@ section img {
 	padding: 0;
 	margin: 0;
 }
-
+#pretty img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#pretty:hover img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+#pretty img:hover {
+  -webkit-filter: none;
+  filter: none;
+}
 
 .content {
 	background-color: rgba(255, 255, 255, .7);
