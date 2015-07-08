@@ -82,6 +82,24 @@ section img {
 
 }
 
+h2 {
+	color: #FF799C;
+	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 100;
+	font-size: 300%;
+	text-transform: lowercase;
+	text-align: center;
+	margin: 2px;
+	text-shadow: 3px 3px 3px #aaa;
+
+}
+
+h3 {
+	font-weight: 300;
+
+
+}
+
 .content {
 	background-color: rgba(255, 255, 255, .7);
 	padding: 20px;
@@ -91,6 +109,8 @@ section img {
 .textcontent {
 	margin-left: 27%;
 	margin-right: 27%;
+	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+	text-align: center;
 }
 
 #about {

@@ -1,11 +1,35 @@
+var pic1Clicked = 0;
+var pic2Clicked = 0;
+var pic3Clicked = 0;
+var pic4Clicked = 0;
+var pic5Clicked = 0;
+
 var clickPic1 = function() {
-	var a = document.getElementById("about").innerHTML;
-	document.getElementById("display").innerHTML = a;
+	if(pic1Clicked == 0) {
+		var a = document.getElementById("about").innerHTML;
+		document.getElementById("display").innerHTML = a;
+		setToZero();
+		pic1Clicked = 1;
+	}
+	else {
+		document.getElementById("display").innerHTML="";
+		pic1Clicked = 0;
+	}
+	
 };
 
 var clickPic2 = function() {
-	var a = document.getElementById("code").innerHTML;
-	document.getElementById("display").innerHTML = a;
+
+	if(pic2Clicked == 0) {
+		var a = document.getElementById("code").innerHTML;
+		document.getElementById("display").innerHTML = a;
+		setToZero();
+		pic2Clicked = 1;
+	}
+	else {
+		document.getElementById("display").innerHTML="";
+		pic2Clicked = 0;
+	}
 };
 
 var clickPic3 = function() {
@@ -14,14 +38,38 @@ var clickPic3 = function() {
 };
 
 var clickPic4 = function() {
-	var a = document.getElementById("music").innerHTML;
-	document.getElementById("display").innerHTML = a;
+	if(pic4Clicked == 0) {
+		var a = document.getElementById("music").innerHTML;
+		document.getElementById("display").innerHTML = a;
+		setToZero();
+		pic4Clicked = 1;
+	}
+	else {
+		document.getElementById("display").innerHTML="";
+		pic4Clicked = 0;
+	}
 };
 
 var clickPic5 = function() {
-	var a = document.getElementById("contact").innerHTML;
-	document.getElementById("display").innerHTML = a;
+	if(pic5Clicked == 0) {
+		var a = document.getElementById("contact").innerHTML;
+		document.getElementById("display").innerHTML = a;
+		setToZero();
+		pic5Clicked = 1;
+	}
+	else {
+		document.getElementById("display").innerHTML="";
+		setToZero();
+	}
 };
+
+var setToZero = function() {
+	pic1Clicked = 0;
+	pic2Clicked = 0;
+	pic3Clicked = 0;
+	pic4Clicked = 0;
+	pic5Clicked = 0;
+}
 
 
 // $( "p" ).click(function() {
