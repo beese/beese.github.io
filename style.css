@@ -128,3 +128,7 @@ h3 {
 #contact {
 	display: none;
 }
+
+#display {
+	display: hidden;
+}
