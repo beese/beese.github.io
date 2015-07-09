@@ -63,7 +63,7 @@ var clickPic5 = function() {
 var slideBack = function(next) {
 	if (pic1Clicked == 1) {
 		pic1Clicked = 0;
-		$( "#about" ).slideUp( "slow");
+		$(".slide").slideUp( "slow");
 	}
 	else if (pic2Clicked == 1) {
 		pic2Clicked = 0;
