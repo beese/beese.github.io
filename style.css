@@ -31,7 +31,7 @@ p {
 	text-align: center;
 	margin: 0px;
 	/*position: fixed;*/
-	width: 100%;
+	width: 100% - 10px;
 	top: 0;
 }
 body {
@@ -102,10 +102,11 @@ h3 {
 
 .content {
 	background-color: rgba(255, 255, 255, .7);
+	/*padding: 20px;*/
 	padding: 20px;
-	width: 100%;
-
+	width: 100% - 40px;
 }
+
 .textcontent {
 	margin-left: 27%;
 	margin-right: 27%;
@@ -131,4 +132,8 @@ h3 {
 
 #display {
 	display: hidden;
+}
+
+.slide {
+
 }

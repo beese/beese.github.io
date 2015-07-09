@@ -26,11 +26,11 @@
 				<!-- make pictures stay black and white if not clicked -->
 				<!-- a way to click the picture again and content goes away -->
 				<!-- having the content slide in and slide out -->
-				<img src="pictures/withtext/pic1.jpg" alt = "b" title="about" onclick = "clickPic1()"><img src="pictures/withtext/pic2.jpg" title="code" onclick = "clickPic2()"><a href="2015-07-08.pdf"><img src="pictures/withtext/pic3.jpg" title="resume" onclick = "clickPic3()"></a><img src="pictures/withtext/pic4.jpg" title="music" onclick = "clickPic4()"><img src="pictures/withtext/pic5.jpg" title="contact" onclick = "clickPic5()">
+				<a href="#about"><img src="pictures/withtext/pic1.jpg" alt = "b" title="about" onclick = "clickPic1()"></a><a href="#code"><img src="pictures/withtext/pic2.jpg" title="code" onclick = "clickPic2()"></a><a href="2015-07-08.pdf"><img src="pictures/withtext/pic3.jpg" title="resume" onclick = "clickPic3()"></a><a href="#music"><img src="pictures/withtext/pic4.jpg" title="music" onclick = "clickPic4()"></a><a href="#contact"><img src="pictures/withtext/pic5.jpg" title="contact" onclick = "clickPic5()"></a>
 			</div>
 		</section>
 		<section class = "content">
-			<div id = "about" class = "content">
+			<div id = "about" class = "slide">
 				<div class = "textcontent">
 					<h2>hello</h2>
 					<p>I'm <a href = "2015-07-07.pdf">Kristin</a>, and welcome to my website!  </p>
@@ -39,26 +39,26 @@
 				</div>
 			</div>
 
-			<div id = "code" class = "content">
+			<div id = "code" class = "slide">
 				<div class = "textcontent">
-					<h2>the girl who codes</h2>
+					<h2>{girl who codes}</h2>
 					<p>I love to code! Yay code!</p>
 				</div>
 			</div>
 
-			<div id = "resume" class = "content">
+			<div id = "resume">
 				<div class = "textcontent">
 				</div>
 			</div>
 
-			<div id = "music" class = "content">
+			<div id = "music" class = "slide">
 				<div class = "textcontent">
 					<h2>do re mi</h2>
 					<p>music is fun!</p>
 				</div>
 			</div>
 
-			<div id = "contact" class = "content">
+			<div id = "contact" class = "slide">
 				<div class = "textcontent">
 					<h2>let's be friends</h2>
 					<h3><b>Linkedin:</b> <a href = "https://www.linkedin.com/pub/kristin-beese/a4/424/901">Kristin Beese</a></h3>
@@ -68,9 +68,6 @@
 				</div>
 			</div>
 
-			<div id = "display">
-
-			</div>
 
 		</section>
 

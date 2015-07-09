@@ -4,6 +4,8 @@ var pic3Clicked = 0;
 var pic4Clicked = 0;
 var pic5Clicked = 0;
 
+var prevPage = 0;
+
 var clickPic1 = function() {
 	if(pic1Clicked == 0) {
 		slideBack();
@@ -58,22 +60,22 @@ var clickPic5 = function() {
 	}
 };
 
-var slideBack = function() {
+var slideBack = function(next) {
 	if (pic1Clicked == 1) {
 		pic1Clicked = 0;
-		$( "#about" ).slideUp( "slow" );
+		$( "#about" ).slideUp( "slow");
 	}
 	else if (pic2Clicked == 1) {
 		pic2Clicked = 0;
-		$( "#code" ).slideUp( "slow" );
+		$( "#code" ).slideUp( "slow");
 	}
 	else if (pic4Clicked == 1) {
 		pic4Clicked = 0;
-		$( "#music" ).slideUp( "slow" );
+		$( "#music" ).slideUp( "slow");
 	}
 	else if (pic5Clicked == 1) {
 		pic5Clicked = 0;
-		$( "#contact" ).slideUp( "slow" );
+		$( "#contact" ).slideUp( "slow");
 	}
 }
 
