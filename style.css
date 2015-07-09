@@ -79,7 +79,12 @@ section img {
 #pretty img:hover {
 	-webkit-filter: none;
 	filter: none;
+}
 
+.stay img {
+	filter: blur(4px) grayscale(100%);
+	-webkit-filter: blur(3px) grayscale(100%);
+	-moz-filter: grayscale(100%);
 }
 
 h2 {
@@ -155,12 +160,11 @@ h3 {
 
 }
 
-.disney {
-	font-weight: 400;
-	font-size: 120%;
-}
 
 .disney b {
 	color: #FF799C;
 	font-weight: 400;
+	font-weight: 400;
+	font-size: 120%;
 }
+

@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Kristin Beese</title>
-		  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="myscripts.js"></script>
 
 		<meta charset="utf-8">
@@ -10,6 +10,10 @@
 		<meta name="viewport" content="width=840">
 		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Slabo+27px|Open+Sans+Condensed:300|Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href = "style.css">
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+
+		<link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<header id="masthead">
@@ -26,7 +30,7 @@
 				<!-- make pictures stay black and white if not clicked -->
 				<!-- a way to click the picture again and content goes away -->
 				<!-- having the content slide in and slide out -->
-				<a href="#about"><img src="pictures/withtext/pic1.jpg" alt = "b" title="about" onclick = "clickPic1()"></a><a href="#code"><img src="pictures/withtext/pic2.jpg" title="code" onclick = "clickPic2()"></a><a href="2015-07-08.pdf" target="_blank"><img src="pictures/withtext/pic3.jpg" title="resume" onclick = "clickPic3()"></a><a href="#music"><img src="pictures/withtext/pic4.jpg" title="music" onclick = "clickPic4()"></a><a href="#contact"><img src="pictures/withtext/pic5.jpg" title="contact" onclick = "clickPic5()"></a>
+				<a href="#about"><img src="pictures/withtext/pic1.jpg" alt = "b" title="about" onclick = "clickPic1()" id = "pic1"></a><a href="#code"><img src="pictures/withtext/pic2.jpg" title="code" onclick = "clickPic2()" id = "pic2"></a><a href="2015-07-08.pdf" target="_blank"><img src="pictures/withtext/pic3.jpg" title="resume" onclick = "clickPic3()" id = "pic3"></a><a href="#music"><img src="pictures/withtext/pic4.jpg" title="music" onclick = "clickPic4()"></a><a href="#contact"><img src="pictures/withtext/pic5.jpg" title="contact" onclick = "clickPic5()"></a>
 			</div>
 		</section>
 		<section class = "content">
@@ -36,7 +40,7 @@
 					<p>Kristin is a student at Purdue University studying Computer Science.  Growing up, Kristin had dreamed of being an actress, ballerina, princess, or singer and had never even thought of software engineering, or even had a clue of what it was.  Although she loved being able to go on computers and create things any opportunity she got, she wasn't sure what that could be useful for.  During her junior year of highschool, she decided to take a risk and sign up for AP Computer Science.  A few months into the class, Kristin decided that this was something she loved.  Having the creative power to solve problems and create on the computer was somehing so amazing for her.  Now at Purdue, Kristin is coding projects in Java, C, C++, Python, Javascript, HTML/CSS and she couldn't be happier.</p>
 					<p>This summer, Kristin had the amazing opporunitiy to work with <a href="http://girlswhocode.com" target="_blank">Girls Who Code</a> as a Teaching Assistant at a Summer Immersion Program at Electronic Arts in Redwood City, CA.  It gave her a chance to teach her passion for code to high school girls, and to help lower the gender gap in the tech sector.</p>
 					<p>Besides coding, Kristin enjoys cuddling puppies, strumming on the ukulele, watching Arrested Development, taking naps, laying on the dock at her cabin, and singing with her Sisters in Song: <a href="https://www.purdue.edu/pmo/ensembles/purduettes/#" target="_blank">The Purduettes</a> (basically a Pitch Perfect dream come true)</p>
-					<p class="disney">She hopes to one day become the first <b>Disney Princess</b> who can <b>code</b>.</p>
+					<p class = "disney">She hopes to one day become the first <b>Disney Princess</b> who can <b>code</b>.</p>
 					
 				</div>
 			</div>
@@ -45,6 +49,26 @@
 				<div class = "textcontent">
 					<h2>{girl who codes}</h2>
 					<p>I love to code! Yay code!</p>
+					<!-- try jquery accordian for project displays -->
+					<div id="accordion">
+						<h3>Section 1</h3>
+						<div>
+							<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+  						</div>
+ 						<h3>Section 2</h3>
+						<div>
+							<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+						</div>
+  						<h3>Section 3</h3>
+						<div>
+							<p>Nam enim risus, molestie et, porta </p>
+						</div>
+						<h3>Section 4</h3>
+						<div>
+							<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 

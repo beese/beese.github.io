@@ -11,6 +11,8 @@ var clickPic1 = function() {
 		slideBack();
     	$( "#about" ).slideDown( "slow" );
 		pic1Clicked = 1;
+
+		//make pic stay in color and the others stay in black and white
 	}
 	else {
     	$( "#about" ).slideUp( "slow" );
@@ -56,6 +58,12 @@ var clickPic5 = function() {
 	}
 };
 
+$(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+ });
+
 var slideBack = function(next) {
 	if (pic1Clicked == 1) {
 		pic1Clicked = 0;
@@ -74,5 +82,4 @@ var slideBack = function(next) {
 		$( "#contact" ).slideUp( "slow");
 	}
 }
-
 
