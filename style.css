@@ -100,8 +100,21 @@ h3 {
 
 }
 
+
 #social img{
 	width: 15%;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+#social:hover img {
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}
+#social img:hover{
+	width: 18%;
+	-webkit-filter: none;
+	filter: none;
 }
 
 .content {

@@ -31,10 +31,6 @@ var clickPic2 = function() {
 	}
 };
 
-var clickPic3 = function() {
-	var a = document.getElementById("resume").innerHTML;
-	document.getElementById("display").innerHTML = a;
-};
 
 var clickPic4 = function() {
 	if(pic4Clicked == 0) {
@@ -63,7 +59,7 @@ var clickPic5 = function() {
 var slideBack = function(next) {
 	if (pic1Clicked == 1) {
 		pic1Clicked = 0;
-		$(".slide").slideUp( "slow");
+		$( ".slide" ).slideUp( "slow");
 	}
 	else if (pic2Clicked == 1) {
 		pic2Clicked = 0;
