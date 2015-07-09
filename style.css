@@ -154,3 +154,13 @@ h3 {
 .slide {
 
 }
+
+.disney {
+	font-weight: 400;
+	font-size: 120%;
+}
+
+.disney b {
+	color: #FF799C;
+	font-weight: 400;
+}
