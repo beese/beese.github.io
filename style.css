@@ -175,8 +175,7 @@ h4 {
 #wrongpass img{
 	width: 60%;
 }
-
-#chatroompics {
+.codepics{
 	background-color: rgba(255, 121, 156, .4);
 	padding:10px;
 }
@@ -186,6 +185,11 @@ h4 {
 	font-weight: 400;
 	font-weight: 400;
 	font-size: 120%;
+}
+
+#android img {
+	width:40%;
+	padding: 3px;
 }
 
 #accordion {
