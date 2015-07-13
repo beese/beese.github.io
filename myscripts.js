@@ -6,80 +6,37 @@ var pic5Clicked = 0;
 
 var prevPage = 0;
 
-var clickPic1 = function() {
-	if(pic1Clicked == 0) {
-		slideBack();
-    	$( "#about" ).slideDown( "slow" );
-		pic1Clicked = 1;
+var lastClicked = null;
 
-		//make pic stay in color and the others stay in black and white
-	}
-	else {
-    	$( "#about" ).slideUp( "slow" );
-		pic1Clicked = 0;
-	}
-	
-};
+$(function(){ //when document is ready run this function
+	$("#pretty a").click(function(e){
+		var href = $(this).attr("href");
+		if(href[0] !== "#") { //click on resume
+			return true;
+		}
+		//now handle the different cases
+		$(this).parents("#pretty").addClass("active");
+		$(this).parents("#pretty").find("img").removeClass("active");
+		$(this).find("img").addClass("active");
+		var $this = $(this);
 
-var clickPic2 = function() {
-	if(pic2Clicked == 0) {
-		slideBack();
-    	$( "#code" ).slideDown( "slow" );
-		pic2Clicked = 1;
-	}
-	else {
-    	$( "#code" ).slideUp( "slow" );
-		pic2Clicked = 0;
-	}
-};
-
-
-var clickPic4 = function() {
-	if(pic4Clicked == 0) {
-    	slideBack();
-    	$( "#music" ).slideDown( "slow" );
-		pic4Clicked = 1;
-	}
-	else {
-    	$( "#music" ).slideUp( "slow" );
-		pic4Clicked = 0;
-	}
-};
-
-var clickPic5 = function() {
-	if(pic5Clicked == 0) {
-    	slideBack();
-    	$( "#contact" ).slideDown( "slow" );
-		pic5Clicked = 1;
-	}
-	else {
-    	$( "#contact" ).slideUp( "slow" );
-		pic5Clicked = 0;
-	}
-};
-
-$(function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
- });
-
-var slideBack = function(next) {
-	if (pic1Clicked == 1) {
-		pic1Clicked = 0;
-		$( ".slide" ).slideUp( "slow");
-	}
-	else if (pic2Clicked == 1) {
-		pic2Clicked = 0;
-		$( "#code" ).slideUp( "slow");
-	}
-	else if (pic4Clicked == 1) {
-		pic4Clicked = 0;
-		$( "#music" ).slideUp( "slow");
-	}
-	else if (pic5Clicked == 1) {
-		pic5Clicked = 0;
-		$( "#contact" ).slideUp( "slow");
-	}
-}
-
+		if(lastClicked !== null) {
+			$(lastClicked).slideUp("slow", function(){
+				if(lastClicked !== href) {
+					$(href).slideDown("slow");
+					lastClicked = href;
+				}
+				else {
+					$this.find("img").removeClass("active");
+					$this.parents("#pretty").removeClass("active");
+					lastClicked = null;
+				}
+			});
+		}
+		else {
+			$(href).slideDown("slow");
+			lastClicked = href;
+		}
+	});
+	return false;
+});
