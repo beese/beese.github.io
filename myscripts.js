@@ -14,11 +14,15 @@ $(function(){ //when document is ready run this function
 		if(href[0] !== "#") { //click on resume
 			return true;
 		}
+
+		var $this = $(this)
+		,	$pretty = $this.parents("#pretty")
+		;
+
 		//now handle the different cases
-		$(this).parents("#pretty").addClass("active");
-		$(this).parents("#pretty").find("img").removeClass("active");
-		$(this).find("img").addClass("active");
-		var $this = $(this);
+		$pretty.addClass("active");
+		$pretty.find("img").removeClass("active");
+		$this.find("img").addClass("active");
 
 		if(lastClicked !== null) {
 			$(lastClicked).slideUp("slow", function(){
@@ -28,7 +32,7 @@ $(function(){ //when document is ready run this function
 				}
 				else {
 					$this.find("img").removeClass("active");
-					$this.parents("#pretty").removeClass("active");
+					$pretty.removeClass("active");
 					lastClicked = null;
 				}
 			});
