@@ -98,7 +98,8 @@
 			}
 
 			#white {
-				background-color: rgba(255, 255, 255, 0.2);
+				background-color: rgba(255, 255, 255, 0.45);
+				-webkit-background-size: cover;
 			}
 
 			h1 {
@@ -117,7 +118,7 @@
 
 			#section1 h2{
 				color: black;
-				font-size: 150%;
+				font-size: 125%;
 				margin: 5%;
 				margin-top: 2%;
 			}
@@ -153,7 +154,7 @@
 
 			#section1 img {
 				float: left;
-				width: 15%;
+				width: 13%;
 				margin: 6%;
 				margin-top: 0%;
 			
@@ -163,12 +164,22 @@
 				font-size: 150%;
 			}
 
+			#section1 h1 {
+				padding: 0;
+				margin: 0;
+				padding-top: 5px;
+			}
+
 			#section3 p {
 				color: black;
 			}
 
 			#end {
-				padding-bottom: 8%;
+				padding-bottom: 3%;
+			}
+
+			#top {
+				padding-top: 3%;
 			}
 
 			a {
@@ -191,7 +202,7 @@
 
 			<div class="section active" id="section0">
 				<img id="logo" src="assets/whiteweblogo.png">
-				<h2>your <b>go to app</b> for quick and easy statistics on gas mileage, driving, cost per gallon, and more</h2>
+				<h2>your <b>go to app</b> for quick and easy car statistics on gas mileage, driving, cost per gallon, and more</h2>
 				<img id="app" src="ios-coming-soon.png">
 
 			</div>
@@ -201,18 +212,23 @@
 				<div id="white">
 
 				
-					<h1>simple and easy car stats</h1>
+					<h1 id="top">simple and easy car stats</h1>
 					<h2>On the Road is your go to app for tracking a <b>ton</b> of different car/driving statistics.  Use this app to see your average miles per gallon, cost per gallon, miles driven before filling up, as well as your total miles driven, and even a history log so you can view all of your prior fills to see what day you specifically had the best gas mileage or the cheapest gas. </h2>
 					<h1>get started today</h1>
-					<div id="piclist">
-						<img src="screenshots/mockup/enter_iphone5s_silver_side1.png">
-						<div id="numlist">
-							<p><b>1.</b>  <b>Download</b> On the Road onto your iOS device</p>
-							<p><b>2.</b>  Before your first log, make sure that your car has a <b>full tank</b> of gas to get accurate statistics</p>
-							<p><b>3.</b>  When you have a full tank, start your car's <b>odometer at 0</b> so you can track how many miles you have driven when you fill your car up next</p>
-							<p id="end"><b>4.</b>  The next time you fill up your car with gas, take out your phone to <b>enter</b> in the miles you've driven, the amount of gallons you filled, and your total cost of gas</p>
-						</div>
-					</div>
+
+					<table style="width:100%">
+						<tr>
+							<img src="screenshots/mockup/enter_iphone5s_silver_side1.png">
+						</tr>
+						<tr>
+							<div id="numlist">
+								<p><b>1.</b>  <b>Download</b> On the Road onto your iOS device</p>
+								<p><b>2.</b>  Before your first log, make sure that your car has a <b>full tank</b> of gas to get accurate statistics</p>
+								<p><b>3.</b>  When you have a full tank, start your car's <b>odometer at 0</b> so you can track how many miles you have driven when you fill your car up next</p>
+								<p id="end"><b>4.</b>  The next time you fill up your car with gas, take out your phone to <b>enter</b> in the miles you've driven, the amount of gallons you filled, and your total cost of gas</p>
+							</div>
+						</tr>
+					</table>
 				</div>
 
 			</div>
