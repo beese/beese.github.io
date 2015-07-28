@@ -11,6 +11,7 @@
 		<meta name="Resource-type" content="Document" />
 
 		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Slabo+27px|Open+Sans+Condensed:300|Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="examples.css" />
 
 		<script src="jquery-1.8.2.min.js"></script>
@@ -65,20 +66,113 @@
 				background-size: cover;
 			}
 
-			#section0 img {
-				width: 50%;
-				margin-left: 25%;
-				margin-right: 25%;
+			#logo {
+				width: 40%;
+				margin-left: 30%;
+				margin-right: 30%;
+			}
+
+			#section3 img {
+				width: 20%;
+				margin-right: 40%;
+				margin-left: 40%;
+
+			}
+
+			h3 {
+				color: black;
+			}
+
+
+			#section3 h2, h3{
+				color: black;
+				padding: 1%;
 			}
 
 			#section0 {
 				background: linear-gradient(#c22f1b, #9e2417);
 			}
 
-			h2 {
+			#section3 {
+				background: linear-gradient(#FFFFFF, #BABABA);
+			}
+
+			#white {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			h1 {
+				color: black;
+				font-size: 310%;
+				font-weight: 500;
+			}
+			#section1 p {
+				color: black;
+				font-size: 150%;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 2%;
+				margin-bottom: 1%;
+			}
+
+			#section1 h2{
+				color: black;
+				font-size: 150%;
+				margin: 5%;
+				margin-top: 2%;
+			}
+
+			#section1 h3 {
+				font-size: 255%;
+				font-weight: 500;
+				color: black;
+			}
+
+			#section0 h2 {
 				font-size: 200%;
 				color: white;
-				padding: 5px;
+				padding-top: 4%;
+				padding-bottom: 4%;
+				padding-left: 8%;
+				padding-right: 8%;
+			}
+
+			#app {
+				width: 20%;
+			}
+
+			#numlist {
+				text-align: left;
+			}
+
+			#section2 img {
+				height: 70%;
+				text-align: center;
+				margin: 0;
+			}
+
+			#section1 img {
+				float: left;
+				width: 15%;
+				margin: 6%;
+				margin-top: 0%;
+			
+			}
+
+			#section3 h3 {
+				font-size: 150%;
+			}
+
+			#section3 p {
+				color: black;
+			}
+
+			#end {
+				padding-bottom: 8%;
+			}
+
+			a {
+				color: #c22f1b;
 			}
 
 		</style>
@@ -90,34 +184,52 @@
 			<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
 			<li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
 			<li data-menuanchor="3rdPage"><a href="#3rdPage">Screenshots</a></li>
-			<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+			<li data-menuanchor="4thpage"><a href="#4thpage">Support</a></li>
 		</ul>
 
 		<div id="fullpage">
 
 			<div class="section active" id="section0">
-
-				<img src="assets/whiteweblogo.png">
-				<h2>text about this super awesome cool and really great and fantastic yay app</h2>
+				<img id="logo" src="assets/whiteweblogo.png">
+				<h2>your <b>go to app</b> for quick and easy statistics on gas mileage, driving, cost per gallon, and more</h2>
+				<img id="app" src="ios-coming-soon.png">
 
 			</div>
 
 			<div class="section" id="section1">
 
-				<h1>About</h1>
+				<div id="white">
+
+				
+					<h1>simple and easy car stats</h1>
+					<h2>On the Road is your go to app for tracking a <b>ton</b> of different car/driving statistics.  Use this app to see your average miles per gallon, cost per gallon, miles driven before filling up, as well as your total miles driven, and even a history log so you can view all of your prior fills to see what day you specifically had the best gas mileage or the cheapest gas. </h2>
+					<h1>get started today</h1>
+					<div id="piclist">
+						<img src="screenshots/mockup/enter_iphone5s_silver_side1.png">
+						<div id="numlist">
+							<p><b>1.</b>  <b>Download</b> On the Road onto your iOS device</p>
+							<p><b>2.</b>  Before your first log, make sure that your car has a <b>full tank</b> of gas to get accurate statistics</p>
+							<p><b>3.</b>  When you have a full tank, start your car's <b>odometer at 0</b> so you can track how many miles you have driven when you fill your car up next</p>
+							<p id="end"><b>4.</b>  The next time you fill up your car with gas, take out your phone to <b>enter</b> in the miles you've driven, the amount of gallons you filled, and your total cost of gas</p>
+						</div>
+					</div>
+				</div>
 
 			</div>
 
 			<div class="section" id="section2">
-
-				<div class="slide "><h1>Simple Demo</h1></div>
-			    <div class="slide active"><img src="http://a4.mzstatic.com/us/r30/Purple1/v4/eb/84/ae/eb84aeed-cb9b-38f1-249c-1431e0dda6b3/screen322x572.jpeg"></div>
-			    <div class="slide"><h1>And text</h1></div>
-			    <div class="slide"><h1>And more text</h1></div>
+			    <div class="slide active"><img src="screenshots/mockup/enter_iphone5s_silver_portrait.png"></div>
+			    <div class="slide active"><img src="screenshots/mockup/log_iphone5s_silver_portrait.png"></div>
+			    <div class="slide active"><img src="screenshots/mockup/reset_iphone5s_silver_portrait.png"></div>
 			</div>
 
 			<div class="section" id="section3">
-				<h1>Contact</h1>
+				
+				<img src="assets/Rendered/iOS App Icon/iOS App Icon-AppStore@2x.png">
+				<h1>comments, questions, or concerns?</h1>
+				<h3>Please contact me, <a href = "http://kristinbeese.com" target="_blank">Kristin Beese</a>:</h3>
+				<p><a href="mailto:kristinbeese@gmail.com"><b>email</b></a><p>
+				<p><a a href = "https://www.linkedin.com/pub/kristin-beese/a4/424/901" target="_blank"><b>linkedin</b></a><p>
 			</div>
 		</div>
 
