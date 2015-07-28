@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>On the Road</title>
+
+		<meta name="author" content="Kristin Beese" />
+		<meta name="description" content="On the Road App: Your go to App for gas mileage and driving stats" />
+		<meta name="keywords"  content="driving, apps, road, gas mileage, stats, simple, car, miles, gas cost" />
+		<meta name="Resource-type" content="Document" />
+
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="examples.css" />
+
+		<script src="jquery-1.8.2.min.js"></script>
+
+
+		<script type="text/javascript" src="jquery.fullPage.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+					menu: '#menu',
+					afterLoad: function(anchorLink, index){
+
+						//section 2
+						if(index == 2){
+							//moving the image
+							$('#section1').find('img').delay(500).animate({
+								left: '0%'
+							}, 1500, 'easeOutExpo');
+
+							$('#section1').find('p').first().fadeIn(1800, function(){
+								$('#section1').find('p').last().fadeIn(1800);
+							});;
+
+						}
+
+						//section 3
+						if(anchorLink == '3rdPage'){
+							//moving the image
+							$('#section2').find('.intro').delay(500).animate({
+								left: '0%'
+							}, 1500, 'easeOutExpo');
+						}
+					}
+				});
+			});
+		</script>
+		<style>
+
+			#section1{
+				background:url("roadtrip.jpg") center top no-repeat; 
+				background-position: fixed;
+				background-color: #000000;
+				background-size: cover;
+			}
+
+			#section2{
+				background:url("road-trip-ftr.jpg") center top no-repeat; 
+				background-position: fixed;
+				background-color: #000000;
+				background-size: cover;
+			}
+
+			#section0 img {
+				width: 50%;
+				margin-left: 25%;
+				margin-right: 25%;
+			}
+
+			#section0 {
+				background: linear-gradient(#c22f1b, #9e2417);
+			}
+
+			h2 {
+				font-size: 200%;
+				color: white;
+				padding: 5px;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<ul id="menu">
+			<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+			<li data-menuanchor="3rdPage"><a href="#3rdPage">Screenshots</a></li>
+			<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+		</ul>
+
+		<div id="fullpage">
+
+			<div class="section active" id="section0">
+
+				<img src="assets/whiteweblogo.png">
+				<h2>text about this super awesome cool and really great and fantastic yay app</h2>
+
+			</div>
+
+			<div class="section" id="section1">
+
+				<h1>About</h1>
+
+			</div>
+
+			<div class="section" id="section2">
+
+				<div class="slide "><h1>Simple Demo</h1></div>
+			    <div class="slide active"><img src="http://a4.mzstatic.com/us/r30/Purple1/v4/eb/84/ae/eb84aeed-cb9b-38f1-249c-1431e0dda6b3/screen322x572.jpeg"></div>
+			    <div class="slide"><h1>And text</h1></div>
+			    <div class="slide"><h1>And more text</h1></div>
+			</div>
+
+			<div class="section" id="section3">
+				<h1>Contact</h1>
+			</div>
+		</div>
+
+	</body>
+</html>
