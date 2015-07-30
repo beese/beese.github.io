@@ -178,6 +178,7 @@ h4 {
 .codepics{
 	background-color: rgba(255, 121, 156, .4);
 	padding:10px;
+	margin-top: 2%;
 }
 
 .disney b {
@@ -188,6 +189,11 @@ h4 {
 }
 
 #android img {
+	width:40%;
+	padding: 3px;
+}
+
+#app img {
 	width:40%;
 	padding: 3px;
 }
