@@ -1,210 +1,30 @@
+.middle {
+	margin: 0;
+	text-align: center;
+}
+
 p {
 	color: black;
 	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-	font-size: 100%;
+	font-size: 200%;
 	margin-top: 0px;
 	font-weight: 300;
 	text-align: center;
+}
 
+h1 {
+	color: #000;
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-weight: 25;
+	font-size: 750%;
+	margin-top: 90px;
 }
-.important {
-	font-weight: bold;
-}
-#masthead h1 {
-	color: #FF799C;
-	/*possibly change color to match the logo square*/
-	/*font-family: 'Open Sans Condensed', sans-serif;*/
-	/*font-family: Helvetica, Arial, sans-serif;*/
-	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-	font-weight: 100;
-	font-size: 700%;
-	text-transform: uppercase;
-	margin: 0px;
-	line-height: 80%;
-	text-shadow: 3px 3px 3px #aaa;
-	margin-top: 16px;
-	/*margin-top: 30px;*/
-}
-#masthead {
-	background-color: rgba(255, 255, 255, .7);
-	padding: 5px;
-	text-align: center;
-	margin: 0px;
-	/*position: fixed;*/
-	width: 100% - 10px;
-	top: 0;
-}
+
 body {
 	/*padding-top: 132px;*/
-	background: url("pictures/chevron_bg.jpg") repeat center center;
+	background: url("pictures/marble3.jpg") repeat;
 	width: 100%;
 	height: 100%;
 	margin: 0px;
-}
-#masthead .pronounce {
-	font-size: 70%;
-	color: rgba(0,0,0, .9);
-	margin-bottom: 2px;
-	font-weight: 300;
-}
-
-#topmenu {
-	/*how can I make everything evenly spaced*/
-	width: 20%;
-}
-
-a {
-	color: #FF799C;
-	font-weight: 500;
-}
-
-a:hover {
-	color: pink;
-}
-
-section img {
-	width: 20%;
-	padding: 0;
-	margin: 0;
-}
-#pretty img {
-	-webkit-transition: all .75s;
-	transition: all .75s;
-}
-#pretty:hover img, #pretty.active img {
-	filter: blur(4px) grayscale(100%);
-	-webkit-filter: blur(3px) grayscale(100%);
-	-moz-filter: grayscale(100%);
-}
-#pretty img:hover, #pretty img.active {
-	-webkit-filter: none;
-	filter: none;
-}
-
-.stay img {
-	filter: blur(4px) grayscale(100%);
-	-webkit-filter: blur(3px) grayscale(100%);
-	-moz-filter: grayscale(100%);
-}
-
-h2 {
-	color: #FF799C;
-	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-	font-weight: 100;
-	font-size: 300%;
-	text-transform: lowercase;
-	text-align: center;
-	margin: 2px;
-	text-shadow: 3px 3px 3px #aaa;
-
-}
-
-h3 {
-	font-weight: 400;
-	margin-bottom: 5px;
-	font-size: 170%
-
-
-}
-
-h4 {
-	font-weight: 300;
-	font-size: 110%;
-	margin-top: 0;
-}
-
-
-#social img{
-	width: 15%;
-	-webkit-transition: all .5s;
-	transition: all .5s;
-}
-
-#social:hover img {
-	filter: blur(1px);
-	-webkit-filter: blur(1px);
-}
-#social img:hover{
-	width: 18%;
-	-webkit-filter: none;
-	filter: none;
-}
-
-.content {
-	background-color: rgba(255, 255, 255, .7);
-	/*padding: 20px;*/
-	padding: 20px;
-	/*width: 100% - 40px;*/
-}
-
-.textcontent {
-	margin-left: 27%;
-	margin-right: 27%;
-	font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-	text-align: center;
-}
-
-.textcontent img {
-	width: 50%;
-}
-
-#about {
-	display: none;
-}
-#code {
-	display: none;
-}
-#resume {
-	display: none;
-}
-#music {
-	display: none;
-}
-#contact {
-	display: none;
-}
-
-#display {
-	display: hidden;
-}
-
-.slide {
-
-}
-
-#wrongpass img{
-	width: 60%;
-}
-.codepics{
-	background-color: rgba(255, 121, 156, .4);
-	padding:10px;
-	margin-top: 2%;
-}
-
-#travelwebsite img{
-	width: 90%;
-}
-
-.disney b {
-	color: #FF799C;
-	font-weight: 400;
-	font-weight: 400;
-}
-
-#android img {
-	width:40%;
-	padding: 3px;
-}
-
-#app img {
-	width:40%;
-	padding: 3px;
-}
-
-#accordion {
-	position: center;
-}
-
-.youtube {
-	width: 100%;
 }
